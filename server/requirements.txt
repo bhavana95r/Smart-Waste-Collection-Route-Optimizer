@@ -1,0 +1,14 @@
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+Flask-JWT-Extended
+Flask-SocketIO
+networkx
+ortools
+scikit-learn
+pandas
+openpyxl
+reportlab
+python-dotenv
+numpy
+gunicorn
