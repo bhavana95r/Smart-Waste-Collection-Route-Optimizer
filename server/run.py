@@ -43,7 +43,7 @@ def create_app():
 app = create_app()
 
 # Import all models so SQLAlchemy knows about them
-from app.models import *
+import app.models
 
 # Create database tables automatically
 with app.app_context():
