@@ -42,11 +42,9 @@ def create_app():
 
 app = create_app()
 
-# Import all models so SQLAlchemy knows about them
-import app.models
-
-# Create database tables automatically
 with app.app_context():
+    from app.database import db
+    from app import models
     db.create_all()
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
